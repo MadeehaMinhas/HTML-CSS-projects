@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+.intro{
+    background-color: lightseagreen;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #f1f1f1;
+}
+
+    .side {
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 50px;
+        }
+
+        /* Main column */
+        .main {
+        flex: 50%;
+        background-color: white;
+        padding: 20px;
+        
+        }
+
+        #progressbar {
+  background-color: #20201F;
+  border-radius: 20px; /* (heightOfInnerDiv / 2) + padding */
+  padding: 4px;
+}
+#intro, #name{
+    color: white;
+}
+.cert{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+#python{
+  background-color: #F7901E;
+  width: 80%;
+  /* Adjust with JavaScript */
+  height: 16px;
+  border-radius: 10px;
+}
+
+#html{
+  background-color: #F7901E;
+  width: 90%;
+  /* Adjust with JavaScript */
+  height: 16px;
+  border-radius: 10px;
+}
+#css{
+  background-color: #F7901E;
+  width: 90%;
+  /* Adjust with JavaScript */
+  height: 16px;
+  border-radius: 10px;
+}
+#javascript{
+  background-color: #F7901E;
+  width: 80%;
+  /* Adjust with JavaScript */
+  height: 16px;
+  border-radius: 10px;
+}
+#react{
+  background-color: #F7901E;
+  width: 70%;
+  /* Adjust with JavaScript */
+  height: 16px;
+  border-radius: 10px;
+}
+#node{
+  background-color: #F7901E;
+  width: 70%;
+  /* Adjust with JavaScript */
+  height: 16px;
+  border-radius: 10px;
+}
+
+h1,h2,h4{
+    color: lightseagreen;
+}
+
+
+
+
+        @media (max-width: 700px) {
+            .row, .navbar {   
+              flex-direction: column;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="side">
+                <img id="personal_image" src="image.jpg" width="200px" height="200px" alt="image" />
+
+                <p id="email">minhas.madeeha97@gmail.com</p>
+                <p>+61410898374</p>
+                <p>Perth, WA, Australia</p>
+                <h2>Skills</h2>
+                <hr>
+                <div>
+                    <p>Python</p>
+                    <div id="progressbar">
+                        <div id="python"></div>
+                      </div>
+                </div>
+                <div>
+                    <p>HTML</p>
+                    <div id="progressbar">
+                        <div id="html"></div>
+                      </div>
+                </div>
+                <div>
+                    <p>CSS</p>
+                    <div id="progressbar">
+                        <div id="css"></div>
+                      </div>
+                </div>
+                <div>
+                    <p>Javascript</p>
+                    <div id="progressbar">
+                        <div id="javascript"></div>
+                      </div>
+                </div>
+                <div>
+                    <p>React JS</p>
+                    <div id="progressbar">
+                        <div id="react"></div>
+                      </div>
+                </div>
+                <div>
+                    <p>Node JS</p>
+                    <div id="progressbar">
+                        <div id="node"></div>
+                      </div>
+                </div>
+
+
+            </div>
+            <div class="main">
+                <div  class="intro">
+                <h1 id="name ">Madeeha Minhas</h1>
+                <h4 id="intro" >Web developer</h4>
+                <hr>
+                <p id="intro_section">A motivated and focused Computer Science graduate (3.84 CGPA) seeking for
+                    professional work position at a reputed IT company. With the aim to leverage my
+                    analytical and technical skills, and passion towards learning new skills, I can be
+                    relied upon to help your company achieve its goals.</p>
+                </div>
+                <h2>Work Experience</h2>
+                <hr>
+                <h4>Web developer intern</h4>
+                <p>Eycon, Islamabad</p>
+                <p>June 2019-Sep 2019</p>
+                <p>The tasks I was assigned include individual projects related to front end and back end implementation especially for e-commerce
+                    website. Some examples of such tasks include:</p>
+                <ul>
+                    <li> Building front-end application for university project.</li>
+                    <li>Building front end and backend of ecommerce website using html,css,bootstrap and Django framework.</li>
+                    <li>Implementation of a OS scheduling algorithm using python.</li>
+                </ul>
+                <hr>
+                <div class="cert">
+                <h2>Certifications</h2>
+                <span>2022 | Certified AI engineer from PIAIC</span>
+                </div>
+                <br>
+                <hr>
+                <h2>Projects</h2>
+                <ul>
+                    <li>Python based application that assists visually impaired people to access email services including Gmail and Outlook just like
+                        normal people using voice commands and speech to text technology.</li>
+                    <li> Comparative study of Sentiment Analysis of Covid-19 related news headlines in India using several Machine learning
+                        techniques</li>
+                    <li>Language identification of short texts using advance lightweight transformers.</li>
+                    <li>Application of Generative Adversarial Networks on network traffic.</li>
+                </ul>
+                
+            </div>
+        </div>
+
+    </body>
+</html>
